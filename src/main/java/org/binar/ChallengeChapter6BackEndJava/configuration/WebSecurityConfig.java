@@ -56,7 +56,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers(
                         "/**",
                         "/api/auth/**",
-                        "/films/films_is_playing"
+                        "/films/films_is_playing",
+                        "swagger-ui/**"
                 ).permitAll()
                 .antMatchers(
                         "/films/create_film",
