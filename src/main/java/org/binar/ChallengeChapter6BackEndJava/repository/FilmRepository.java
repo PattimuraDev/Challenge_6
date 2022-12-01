@@ -14,8 +14,8 @@ public interface FilmRepository extends JpaRepository<Film, Long> {
     @Query(value = "select * from films where films.is_playing=true", nativeQuery = true)
     List<Film> repoGetFilmIsPlaying();
 
-    @Query(value = "update films set film_name = ?1 where\n" +
-            "films.film_name = ?2", nativeQuery = true)
+    @Query(value = "update films set film_name = ?2 where\n" +
+            "films.film_name = ?1", nativeQuery = true)
     @Modifying
     void repoUpdateFilmByName(
             @Param("input_nama_film_lama") String judulFilmAsli,
