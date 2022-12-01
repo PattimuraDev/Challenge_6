@@ -12,7 +12,7 @@ import java.util.List;
 
 @Repository
 public interface SeatRepository extends JpaRepository<Seat, SeatNumberCompositeKey> {
-    @Query(value = "call UPDATE_SEAT_STATUS(:nomor_baris_kursi, :nomor_kolom_kursi, :status)", nativeQuery = true)
+    @Query(value = "update seats set status = ?1 where seats.nomor_baris_kursi = ?2 and seats.nomor_kolom_kursi = ?3", nativeQuery = true)
     @Modifying
     void repoUpdateSeats(
             @Param("status") String newStatus,
@@ -20,6 +20,6 @@ public interface SeatRepository extends JpaRepository<Seat, SeatNumberCompositeK
             @Param("nomor_kolom_kursi") String NomorKolomKursi
     );
 
-    @Query(value = "select * from ALL_SEATS_AVAILABLE()", nativeQuery = true)
+    @Query(value = "select seats.nomor_baris_kursi, seats.nomor_kolom_kursi, seats.status, seats.studio_name, seats.schedule_id from seats where seats.status = 'available'", nativeQuery = true)
     List<Seat> repoGetAllSeatsAvailable();
 }

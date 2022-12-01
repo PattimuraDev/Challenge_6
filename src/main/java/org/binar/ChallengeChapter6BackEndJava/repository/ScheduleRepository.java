@@ -9,11 +9,11 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface ScheduleRepository extends JpaRepository<Schedule, Long> {
-    @Query(value = "call DELETE_SCHEDULE_BY_FILM_CODE(:input_kode_film)", nativeQuery = true)
+    @Query(value = "delete from schedules where film_code = ?2", nativeQuery = true)
     @Modifying
     void repoDeleteScheduleByFilmId(@Param("input_kode_film") Long filmId);
 
-    @Query(value = "call UPDATE_FILM_CODE_ON_SCHEDULE(:kode_film, :input_id_schedule)", nativeQuery = true)
+    @Query(value = "update schedules set film_code = ?1 where schedule_id = ?2", nativeQuery = true)
     @Modifying
     void repoUpdateFilmsCodeOfSchedules(
             @Param("kode_film") Long kodeFilm,
