@@ -10,7 +10,7 @@ import java.util.List;
 public class FilmDto {
     @Schema(example = "1")
     private Long filmCode;
-    @Schema(example = "Nama Film")
+    @Schema(example = "Batman Gotham City")
     private String filmName;
     @Schema(example = "true")
     private Boolean isPlaying;
