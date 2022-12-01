@@ -1,5 +1,6 @@
 package org.binar.ChallengeChapter6BackEndJava.controller;
 
+import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.security.SecurityRequirements;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.binar.ChallengeChapter6BackEndJava.configuration.JwtUtils;
@@ -63,6 +64,7 @@ public class LoginController {
     }
 
     @SecurityRequirements
+    @Operation(summary = "Endpoint API untuk melakukan login/sign in")
     @PostMapping("/signin")
     public ResponseEntity<CustomJwtResponse> authenticateUser(@Valid @RequestBody SignInRequestDto signInRequestDto) {
         Authentication authentication = authenticationManager.authenticate(
@@ -83,6 +85,7 @@ public class LoginController {
     }
 
     @SecurityRequirements
+    @Operation(summary = "Endpoint API untuk melakukan signup")
     @PostMapping("/signup")
     public ResponseEntity<CustomMessageResponse> registerUser(@Valid @RequestBody ApplicationUserDto applicationUserDto) {
         Boolean usernameIsExist = applicationUserRepository.existsByUsername(applicationUserDto.getUsername());
