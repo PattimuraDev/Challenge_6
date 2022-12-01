@@ -32,7 +32,6 @@ import java.util.stream.Collectors;
 @Tag(name = "AUTHENTICATION")
 @RestController
 @RequestMapping("/api/auth")
-@CrossOrigin(origins = "https://challenge6-production-53ac.up.railway.app/")
 public class LoginController {
 
     @Autowired

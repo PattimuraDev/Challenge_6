@@ -6,9 +6,13 @@ import io.swagger.v3.oas.models.info.Info;
 import io.swagger.v3.oas.models.info.License;
 import io.swagger.v3.oas.models.security.SecurityRequirement;
 import io.swagger.v3.oas.models.security.SecurityScheme;
+import io.swagger.v3.oas.models.servers.Server;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Configuration
 public class SwaggerConfig {
@@ -17,6 +21,11 @@ public class SwaggerConfig {
                            @Value("v1.0.0") String appVersion
     ){
         final String securitySchemeName = "bearerAuth";
+        Server server = new Server();
+        server.setUrl("https://challenge6-production-53ac.up.railway.app/");
+        List<Server> listOfServer = new ArrayList<>();
+        listOfServer.add(server);
+
         return new OpenAPI()
                 .info(new Info()
                         .title("Patra API")
@@ -28,6 +37,7 @@ public class SwaggerConfig {
                                 .url("http://springdoc.org")
                         )
                 )
+                .servers(listOfServer)
                 .addSecurityItem(new SecurityRequirement()
                         .addList(securitySchemeName)
                 )
