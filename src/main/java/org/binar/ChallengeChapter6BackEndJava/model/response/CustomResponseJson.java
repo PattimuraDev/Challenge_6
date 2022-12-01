@@ -7,8 +7,8 @@ import lombok.Data;
 @Data
 @AllArgsConstructor
 public class CustomResponseJson {
-    @Schema(example = "Server error, tidak dapat menanggapi request")
+    @Schema(example = "Operasi berhasil")
     private String message;
-    @Schema(example = "500")
+    @Schema(example = "200")
     private String statusCode;
 }

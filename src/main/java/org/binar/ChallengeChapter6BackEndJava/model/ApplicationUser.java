@@ -1,5 +1,6 @@
 package org.binar.ChallengeChapter6BackEndJava.model;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -20,15 +21,19 @@ import java.util.Set;
 public class ApplicationUser {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Schema(example = "1")
     private Long id;
     @Column(name = "username")
+    @Schema(example = "user21")
     @NotBlank
     private String username;
     @Column(name = "email")
+    @Schema(example = "user21@gmail.com")
     @NotBlank
     @Email
     private String email;
     @Column(name = "password")
+    @Schema(example = "123abc")
     @NotBlank
     private String password;
 

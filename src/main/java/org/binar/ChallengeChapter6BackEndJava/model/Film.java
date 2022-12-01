@@ -1,5 +1,6 @@
 package org.binar.ChallengeChapter6BackEndJava.model;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -15,9 +16,12 @@ import java.util.List;
 public class Film {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Schema(example = "1")
     private Long filmCode;
     @Column(name = "film_name", unique = true)
+    @Schema(example = "Batman Gotham City")
     private String filmName;
+    @Schema(example = "true")
     private Boolean isPlaying;
 
     @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
