@@ -63,6 +63,11 @@ public class LoginController {
         this.passwordEncoder = passwordEncoder;
     }
 
+    /**
+     * Method controller untuk keperluan sign in
+     * @param signInRequestDto parameter untuk object signInRequestDto yang berisi data yang akan digunakan untuk sign in
+     * @return response entity yang berisi berbagai informasi yang berkaitan dengan user dan token hasil generate
+     */
     @SecurityRequirements
     @Operation(summary = "Endpoint API untuk melakukan login/sign in")
     @PostMapping("/signin")
@@ -84,6 +89,12 @@ public class LoginController {
                 roles));
     }
 
+
+    /**
+     * Method controller untuk keperluan signup
+     * @param applicationUserDto parameter untuk applicationUseraDto yang berisi informasi user yang akan signup
+     * @return response entitiy hasil response endpoint API
+     */
     @SecurityRequirements
     @Operation(summary = "Endpoint API untuk melakukan signup")
     @PostMapping("/signup")

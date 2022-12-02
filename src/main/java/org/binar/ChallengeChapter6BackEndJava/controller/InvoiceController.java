@@ -100,7 +100,7 @@ public class InvoiceController {
                     beanCollectionDataSource
             );
             byte[] data = JasperExportManager.exportReportToPdf(jasperPrint);
-            System.err.println(Arrays.toString(data));
+            System.err.println(data);
 
             HttpHeaders headers = new HttpHeaders();
             headers.add(
