@@ -1,16 +1,13 @@
 package org.binar.ChallengeChapter6BackEndJava.service;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import org.binar.ChallengeChapter6BackEndJava.model.ApplicationUser;
 import org.binar.ChallengeChapter6BackEndJava.model.ApplicationUserDetailsImpl;
-import org.binar.ChallengeChapter6BackEndJava.model.dto.ApplicationUserDto;
 import org.binar.ChallengeChapter6BackEndJava.repository.ApplicationUserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
-
 import java.util.Optional;
 
 @Service

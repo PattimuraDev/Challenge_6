@@ -5,7 +5,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.binar.ChallengeChapter6BackEndJava.model.enumerations.ERole;
-
 import javax.persistence.*;
 
 @Data

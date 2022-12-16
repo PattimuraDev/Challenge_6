@@ -7,7 +7,6 @@ import org.binar.ChallengeChapter6BackEndJava.model.dto.SeatDto;
 import org.binar.ChallengeChapter6BackEndJava.repository.SeatRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import javax.transaction.Transactional;
 import java.util.List;
 

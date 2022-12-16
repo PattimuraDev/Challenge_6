@@ -2,7 +2,6 @@ package org.binar.ChallengeChapter6BackEndJava.service;
 
 import org.binar.ChallengeChapter6BackEndJava.model.Film;
 import org.binar.ChallengeChapter6BackEndJava.model.dto.FilmDto;
-
 import java.util.List;
 
 public interface FilmService {

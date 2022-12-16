@@ -23,7 +23,6 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
-
 import javax.validation.Valid;
 import java.util.HashSet;
 import java.util.List;
@@ -132,7 +131,5 @@ public class LoginController {
         applicationUserRepository.save(applicationUser);
         return ResponseEntity.ok(new CustomMessageResponse("Registrasi user berhasil"));
     }
-
-
 }
 

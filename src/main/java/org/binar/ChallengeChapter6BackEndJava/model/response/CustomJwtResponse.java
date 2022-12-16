@@ -2,7 +2,6 @@ package org.binar.ChallengeChapter6BackEndJava.model.response;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
-
 import java.util.List;
 
 @Data
@@ -26,5 +25,4 @@ public class CustomJwtResponse {
         this.email = email;
         this.roles = roles;
     }
-
 }

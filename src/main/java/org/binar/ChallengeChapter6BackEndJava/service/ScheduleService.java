@@ -2,7 +2,6 @@ package org.binar.ChallengeChapter6BackEndJava.service;
 
 import org.binar.ChallengeChapter6BackEndJava.model.Schedule;
 import org.binar.ChallengeChapter6BackEndJava.model.dto.ScheduleDto;
-
 import java.util.List;
 
 public interface ScheduleService {
