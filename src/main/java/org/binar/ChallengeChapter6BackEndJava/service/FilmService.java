@@ -4,6 +4,11 @@ import org.binar.ChallengeChapter6BackEndJava.model.Film;
 import org.binar.ChallengeChapter6BackEndJava.model.dto.FilmDto;
 import java.util.List;
 
+/**
+ * Interface service untuk menghandle semua permintaan
+ * ke repository user
+ * @author Dwi Satria Patra
+ */
 public interface FilmService {
     Film addFilms(Film films);
 

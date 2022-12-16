@@ -4,6 +4,10 @@ import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 import org.binar.ChallengeChapter6BackEndJava.model.SeatNumberCompositeKey;
 
+/**
+ * Kelas pemodelan DTO (data transfer object) dari seat
+ * @author Dwi Satria Patra
+ */
 @Data
 public class SeatDto {
     private SeatNumberCompositeKey seatNumberCompositeKey;

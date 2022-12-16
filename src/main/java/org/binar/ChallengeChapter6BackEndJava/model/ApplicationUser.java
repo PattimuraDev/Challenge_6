@@ -8,6 +8,10 @@ import javax.validation.constraints.NotBlank;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * Kelas untuk memodelkan table/entity user
+ * @author Dwi Satria Patra
+ */
 @Data
 @Entity
 @Table(

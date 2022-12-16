@@ -7,6 +7,10 @@ import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import java.util.Set;
 
+/**
+ * Kelas pemodelan DTO (data transfer object) dari objek user
+ * @author Dwi Satria Patra
+ */
 @Data
 @AllArgsConstructor
 public class ApplicationUserDto {

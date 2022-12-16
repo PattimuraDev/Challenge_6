@@ -22,6 +22,10 @@ import org.springframework.web.bind.annotation.*;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * Kelas controller untuk menghandle endpoint terkait user
+ * @author Dwi Satria Patra
+ */
 @Tag(name = "USER")
 @RestController
 @RequestMapping("/users")
@@ -86,7 +90,8 @@ public class ApplicationUserController {
 
 
     /**
-     * Method controller untuk mengakomodasi kebutuhan untuk menghapus data user berdasarkan id user
+     * Method controller untuk mengakomodasi kebutuhan untuk menghapus data user
+     * berdasarkan id user
      * @param idUser parameter untuk id dari user
      * @return response entity hasil dari response endpoint API
      */

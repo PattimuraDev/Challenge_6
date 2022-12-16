@@ -9,6 +9,10 @@ import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
+/**
+ * Kelas untuk memodelkan table/entity seat
+ * @author Dwi Satria Patra
+ */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor

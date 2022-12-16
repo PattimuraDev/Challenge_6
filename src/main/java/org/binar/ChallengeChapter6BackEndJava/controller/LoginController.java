@@ -29,6 +29,10 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+/**
+ * Kelas controller untuk menghandle endpoint terkait login dan signup
+ * @author Dwi Satria Patra
+ */
 @Tag(name = "AUTHENTICATION")
 @RestController
 @RequestMapping("/api/auth")

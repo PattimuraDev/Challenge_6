@@ -10,6 +10,11 @@ import org.springframework.stereotype.Service;
 import javax.transaction.Transactional;
 import java.util.List;
 
+/**
+ * Kelas implementasi seat service yang menghandle semua permintaan
+ * ke repository seat
+ * @author Dwi Satria Patra
+ */
 @Service
 @Transactional
 public class SeatServiceImpl implements SeatService {

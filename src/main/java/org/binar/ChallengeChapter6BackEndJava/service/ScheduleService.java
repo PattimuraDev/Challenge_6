@@ -4,6 +4,11 @@ import org.binar.ChallengeChapter6BackEndJava.model.Schedule;
 import org.binar.ChallengeChapter6BackEndJava.model.dto.ScheduleDto;
 import java.util.List;
 
+/**
+ * Interface service untuk menghandle semua permintaan
+ * ke repository schedule
+ * @author Dwi Satria Patra
+ */
 public interface ScheduleService {
     List<Schedule> schedulesOfFilmsByName(String filmName);
 

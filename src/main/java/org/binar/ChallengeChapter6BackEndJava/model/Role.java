@@ -7,6 +7,10 @@ import lombok.NoArgsConstructor;
 import org.binar.ChallengeChapter6BackEndJava.model.enumerations.ERole;
 import javax.persistence.*;
 
+/**
+ * Kelas untuk memodelkan table/entity role
+ * @author Dwi Satria Patra
+ */
 @Data
 @Entity
 @NoArgsConstructor

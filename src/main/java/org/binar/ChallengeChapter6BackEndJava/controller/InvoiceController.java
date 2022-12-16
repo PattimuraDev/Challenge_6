@@ -27,6 +27,10 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.*;
 
+/**
+ * Kelas controller untuk menghandle endpoint terkait invoice
+ * @author Dwi Satria Patra
+ */
 @Tag(name = "INVOICE")
 @RestController
 @RequestMapping("/invoice")

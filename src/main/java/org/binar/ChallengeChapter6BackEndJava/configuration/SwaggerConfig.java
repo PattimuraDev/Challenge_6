@@ -13,6 +13,10 @@ import org.springframework.context.annotation.Configuration;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * kelas untuk representasi konfigurasi swagger ui
+ * @author Dwi Satria Patra
+ */
 @Configuration
 public class SwaggerConfig {
 

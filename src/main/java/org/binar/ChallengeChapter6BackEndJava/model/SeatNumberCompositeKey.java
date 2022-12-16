@@ -7,6 +7,10 @@ import lombok.NoArgsConstructor;
 import javax.persistence.Embeddable;
 import java.io.Serializable;
 
+/**
+ * Kelas untuk memodelkan table/entity composite key dari seat
+ * @author Dwi Satria Patra
+ */
 @Embeddable
 @Data
 @AllArgsConstructor

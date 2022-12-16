@@ -4,6 +4,10 @@ import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 import java.util.List;
 
+/**
+ * Kelas untuk memodelkan objek custom dari hasil jwt response
+ * @author Dwi Satria Patra
+ */
 @Data
 public class CustomJwtResponse {
     @Schema(example = "eyJ.....")

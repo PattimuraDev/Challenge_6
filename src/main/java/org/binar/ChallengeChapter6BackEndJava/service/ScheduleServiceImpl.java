@@ -13,6 +13,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+/**
+ * Kelas implementasi schedule service yang menghandle semua permintaan
+ * ke repository schedule
+ * @author Dwi Satria Patra
+ */
 @Service
 @Transactional
 public class ScheduleServiceImpl implements ScheduleService {

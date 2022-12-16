@@ -5,6 +5,10 @@ import lombok.Data;
 import org.binar.ChallengeChapter6BackEndJava.model.Schedule;
 import java.util.List;
 
+/**
+ * Kelas pemodelan DTO (data transfer object) dari objek film
+ * @author Dwi Satria Patra
+ */
 @Data
 public class FilmDto {
     @Schema(example = "1")
